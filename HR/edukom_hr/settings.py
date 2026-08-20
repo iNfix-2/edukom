@@ -156,7 +156,7 @@ LOGIN_REDIRECT_URL = '/blog/manage/'
 LOGOUT_REDIRECT_URL = '/'
 
 # Learning Platform Link
-LEARNING_PLATFORM_URL = os.environ.get('LEARNING_PLATFORM_URL', 'https://learning.edukom.ng/' if not DEBUG else 'http://127.0.0.1:8009/')
+LEARNING_PLATFORM_URL = os.environ.get('LEARNING_PLATFORM_URL', 'https://learning.edukom.ng/')
 
 # HSTS (recommended for production)
 SECURE_HSTS_SECONDS = int(os.environ.get('DJANGO_SECURE_HSTS_SECONDS', '0' if DEBUG else '31536000'))

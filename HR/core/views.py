@@ -6,8 +6,8 @@ from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.views.decorators.csrf import ensure_csrf_cookie
 
-# Configurable Learning platform URL (defaults to localhost:8009 in development)
-LEARNING_PLATFORM_URL = getattr(settings, 'LEARNING_PLATFORM_URL', 'http://127.0.0.1:8009/')
+# Configurable Learning platform URL
+LEARNING_PLATFORM_URL = getattr(settings, 'LEARNING_PLATFORM_URL', 'https://learning.edukom.ng/')
 
 
 @ensure_csrf_cookie
