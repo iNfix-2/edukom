@@ -4,10 +4,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{% block title %}Edukom – Empowering People & Transforming Organizations{% endblock %}</title>
+  <title>{% block title %}Edukom | Official Portal – HR Consulting & Learning Platform Nigeria{% endblock %}</title>
   {% block meta_description %}
-  <meta name="description" content="Edukom is a premier human resources consulting and learning platform in Nigeria, offering tailored HR solutions, professional training, and career development." />
+  <meta name="description" content="Edukom is Nigeria's premier corporate HR consulting firm and e-learning portal. Empowering organizations and professionals through certified recruitment, talent development, and interactive online courses." />
   {% endblock %}
+  <meta name="keywords" content="Edukom, Edukom HR, Edukom Learning, Edukom Nigeria, HR Consulting Nigeria, Corporate Training Lagos, Ope Komolafe, CIPM Nigeria, HRCI Certification" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://edukom.ng{{ request.path }}" />
+
+  <!-- OpenGraph Social Media Sharing Tags (WhatsApp, LinkedIn, Facebook, Twitter) -->
+  <meta property="og:site_name" content="Edukom Group" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{% block og_title %}Edukom | Empowering People, Transforming Organizations{% endblock %}" />
+  <meta property="og:description" content="{% block og_description %}Official portal for Edukom HR Solutions and Edukom Learning Platform in Nigeria.{% endblock %}" />
+  <meta property="og:url" content="https://edukom.ng{{ request.path }}" />
+  <meta property="og:image" content="https://edukom.ng{% static 'img/logo2.png' %}" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Edukom | Official HR & Learning Portal Nigeria" />
+  <meta name="twitter:description" content="Empowering Nigerian companies and global enterprises with cutting-edge recruitment, skill development, and organizational structuring." />
+  <meta name="twitter:image" content="https://edukom.ng{% static 'img/logo2.png' %}" />
+
+  <!-- JSON-LD Structured Data Schema for Google Search Knowledge Panel -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Edukom Group",
+    "alternateName": ["Edukom", "Edukom HR", "Edukom Learning", "Edukom Nigeria"],
+    "url": "https://edukom.ng",
+    "logo": "https://edukom.ng{% static 'img/logo2.png' %}",
+    "description": "Premier HR consulting firm and digital learning platform in Nigeria, providing certified corporate training, recruitment SOPs, and employee performance frameworks.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "telephone": "+2348033310626",
+      "areaServed": "NG"
+    }
+  }
+  </script>
 
   <!-- Google Fonts (Matching Edukom Learning font system) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
