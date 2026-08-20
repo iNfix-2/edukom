@@ -31,8 +31,8 @@
   <!-- Header / Navigation -->
   <nav class="navbar navbar-expand-lg navbar-custom sticky-top py-3">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="{% url 'home' %}">
-        <img src="{% static 'img/logo.png' %}" alt="Edukom HR Solutions" height="54" class="rounded-3 shadow-sm">
+      <a class="navbar-brand d-flex align-items-center" href="{% url 'gateway_home' %}">
+        <img src="{% static 'img/edukom_logo.svg' %}" alt="Edukom" height="52">
       </a>
       
       <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navEdukom">
@@ -40,22 +40,16 @@
       </button>
 
       <div id="navEdukom" class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
           <li class="nav-item">
-            <a class="nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}" href="{% url 'home' %}">
-              Home
+            <a class="nav-link fw-semibold {% if request.resolver_match.url_name == 'home' %}active{% endif %}" href="{% url 'home' %}">
+              Edukom HR
             </a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'home' %}#about">
-              About Us
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link {% if 'blog' in request.path %}active{% endif %}" href="{% url 'blog_list' %}">
-              Insights
+            <a class="nav-link fw-semibold" href="{% url 'learning_redirect' %}" target="_blank" rel="noopener">
+              Edukom Learning
             </a>
           </li>
 
@@ -103,8 +97,7 @@
       <div class="row gy-4 justify-content-between">
         <div class="col-lg-4">
           <div class="d-flex align-items-center gap-2 mb-3">
-            <img src="{% static 'img/logo.png' %}" alt="Edukom Logo" height="46" class="bg-white rounded-3 p-1">
-            <span class="font-ribeye fs-3 text-white">Edukom</span>
+            <img src="{% static 'img/edukom_logo_white.svg' %}" alt="Edukom" height="52">
           </div>
           <p class="text-white-50 small mb-4">
             Edukom Nigeria empowers organizations and individuals through internationally certified Human Resources consulting, corporate training, and digital learning platforms.
