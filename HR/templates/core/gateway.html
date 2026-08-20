@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Edukom Group – Main Hub & Gateway (edukom.ng){% endblock %}
+
+{% block content %}
+<!-- Hero Section (Organic Swoop Header) -->
+<section class="hero-template-wrap">
+  <div class="container relative z-1">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-7" data-aos="fade-right">
+        <span class="badge bg-white text-dark rounded-pill px-3 py-2 mb-3 font-display shadow-sm fw-bold">
+          <i class="bi bi-stars text-warning me-1"></i> Official Portal Hub
+        </span>
+        <h1 class="display-3 fw-extrabold mb-3 text-white font-display">
+          Empowering People, <br/>
+          <span class="text-gold">Transforming</span> Organizations
+        </h1>
+        <p class="lead text-white-50 mb-4 me-lg-4">
+          Welcome to Edukom Group. Choose your destination below to access our specialized HR management services or our state-of-the-art e-learning platform.
+        </p>
+
+        <div class="d-flex flex-wrap gap-3">
+          <a href="{% url 'home' %}" class="btn btn-gold-pill btn-lg">
+            <i class="bi bi-briefcase-fill me-2"></i> Edukom HR Solutions
+          </a>
+          <a href="{% url 'learning_redirect' %}" target="_blank" rel="noopener" class="btn btn-brand-pill btn-lg">
+            <i class="bi bi-mortarboard-fill me-2"></i> Edukom Learning Portal
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-5 text-center" data-aos="fade-left">
+        <div class="position-relative d-inline-block">
+          <!-- Floating Avatar Blob 1 (Woman) -->
+          <div class="blob-avatar-wrap m-2">
+            <img src="{% static 'img/hero_avatar1.png' %}" alt="Edukom HR Professional" class="blob-avatar blob-avatar-lg">
+            <!-- Triangle doodle -->
+            <svg class="doodle-shape doodle-triangles text-warning" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2z"/></svg>
+          </div>
+          
+          <!-- Floating Avatar Blob 2 (Man) -->
+          <div class="blob-avatar-wrap m-2">
+            <img src="{% static 'img/hero_avatar2.png' %}" alt="Edukom Learner" class="blob-avatar">
+            <!-- Sparkles doodle -->
+            <i class="bi bi-star-fill doodle-shape doodle-sparkles fs-4"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gateway Hub Cards Section -->
+<section class="py-5 my-4">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="badge bg-light text-primary rounded-pill px-3 py-2 fw-semibold">Choose Your Platform</span>
+      <h2 class="display-6 fw-bold mt-2 font-display">Where would you like to go today?</h2>
+      <p class="text-muted mx-auto" style="max-width: 600px;">
+        Edukom provides end-to-end solutions for both corporate human resource optimization and interactive student skill development.
+      </p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <!-- HR Platform Card -->
+      <div class="col-md-6 col-lg-5" data-aos="fade-up" data-aos-delay="100">
+        <div class="hub-card h-100 d-flex flex-column justify-content-between">
+          <div>
+            <span class="hub-badge badge-hr">
+              <i class="bi bi-building me-1"></i> Corporate & Enterprise
+            </span>
+            <h3 class="fw-bold mb-3 font-display" style="color: var(--primary-color);">Edukom HR Solutions</h3>
+            <ul class="list-unstyled d-flex flex-column gap-2 mb-4 text-secondary small">
+              <li><i class="bi bi-check-circle-fill text-accent me-2"></i> Talent Acquisition & Headhunting</li>
+              <li><i class="bi bi-check-circle-fill text-accent me-2"></i> Executive Training & Workshops</li>
+              <li><i class="bi bi-check-circle-fill text-accent me-2"></i> Performance Management Systems</li>
+              <li><i class="bi bi-check-circle-fill text-accent me-2"></i> HR Policy Drafting & SOPs</li>
+            </ul>
+          </div>
+          <div>
+            <a href="{% url 'home' %}" class="btn btn-plum-pill w-100 py-3">
+              Go to Edukom HR <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Learning Platform Card -->
+      <div class="col-md-6 col-lg-5" data-aos="fade-up" data-aos-delay="200">
+        <div class="hub-card h-100 d-flex flex-column justify-content-between">
+          <div>
+            <span class="hub-badge badge-learning">
+              <i class="bi bi-journal-bookmark-fill me-1"></i> Education & Skills
+            </span>
+            <h3 class="fw-bold mb-3 font-display" style="color: var(--blue-accent);">Edukom Learning Platform</h3>
+            <ul class="list-unstyled d-flex flex-column gap-2 mb-4 text-secondary small">
+              <li><i class="bi bi-check-circle-fill text-info me-2"></i> Student Portal & Course Catalog</li>
+              <li><i class="bi bi-check-circle-fill text-info me-2"></i> Expert Tutor Network</li>
+              <li><i class="bi bi-check-circle-fill text-info me-2"></i> Interactive Online Classes</li>
+              <li><i class="bi bi-check-circle-fill text-info me-2"></i> Certification Programs</li>
+            </ul>
+          </div>
+          <div>
+            <a href="{% url 'learning_redirect' %}" target="_blank" rel="noopener" class="btn btn-brand-pill w-100 py-3">
+              Open Learning Platform <i class="bi bi-box-arrow-up-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Callout Banner ("Are you our next superstar?" / "Empowering Growth") -->
+<section class="py-4 mb-5">
+  <div class="container">
+    <div class="superstar-card text-center" data-aos="zoom-in">
+      <!-- Decorative Floating Avatars -->
+      <img src="{% static 'img/hero_avatar1.png' %}" alt="Edukom Star" class="superstar-avatar-top d-none d-md-block">
+      <img src="{% static 'img/hero_avatar2.png' %}" alt="Edukom Learner" class="superstar-avatar-bottom d-none d-md-block">
+
+      <h2 class="display-6 fw-bold mb-3 text-white font-display">Ready to Elevate Your Future?</h2>
+      <p class="lead text-white-50 mx-auto mb-4" style="max-width: 680px;">
+        Whether you are an organization striving for peak productivity or a student eager to learn new skills, Edukom is your trusted partner.
+      </p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="{% url 'home' %}#contact" class="btn btn-gold-pill btn-lg px-4">
+          Contact HR Team
+        </a>
+        <a href="{% url 'learning_redirect' %}" target="_blank" class="btn btn-light rounded-pill font-display fw-bold px-4 py-2">
+          Join Learning Platform
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

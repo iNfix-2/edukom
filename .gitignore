@@ -1,0 +1,42 @@
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.py.class
+env/
+venv/
+ENV/
+.venv/
+.ENV/
+venv_linux/
+venv_linux_new/
+venv*/
+.venv*/
+tmp/
+temp/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS Generated
+.DS_Store
+Thumbs.db
+
+# Logs & Databases
+*.log
+*.sqlite3
+db.sqlite3
+
+# Secrets & Configs
+.env
+.env.local
+
+# Node / JS
+node_modules/
+dist/
+.next/
