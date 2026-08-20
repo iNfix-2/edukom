@@ -71,8 +71,8 @@
               </a>
               <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0 rounded-4" aria-labelledby="userMenu">
                 {% if request.user.is_staff %}
-                  <li><a class="dropdown-item py-2" href="http://127.0.0.1:8009/dashboard/" target="_blank"><i class="bi bi-speedometer2 me-2"></i> Admin Dashboard</a></li>
-                  <li><a class="dropdown-item py-2" href="http://127.0.0.1:8009/blog/create/" target="_blank"><i class="bi bi-plus-circle me-2"></i> Create Article</a></li>
+                  <li><a class="dropdown-item py-2" href="{{ learning_url }}dashboard/" target="_blank"><i class="bi bi-speedometer2 me-2"></i> Admin Dashboard</a></li>
+                  <li><a class="dropdown-item py-2" href="{{ learning_url }}blog/create/" target="_blank"><i class="bi bi-plus-circle me-2"></i> Create Article</a></li>
                   <li><hr class="dropdown-divider"></li>
                 {% endif %}
                 <li>
