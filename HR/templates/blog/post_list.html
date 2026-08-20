@@ -537,7 +537,7 @@
         </div>
         {% if request.user.is_staff %}
         <div class="mt-4">
-          <a href="http://127.0.0.1:8009/dashboard/" target="_blank" class="btn btn-sm btn-outline-warning rounded-pill px-3 py-1">
+          <a href="{{ learning_url }}dashboard/" target="_blank" class="btn btn-sm btn-outline-warning rounded-pill px-3 py-1">
             <i class="bi bi-speedometer2 me-1"></i> Admin Dashboard (Create & Edit Posts)
           </a>
         </div>
@@ -554,7 +554,7 @@
         <p class="blog-hero-excerpt">Expert strategy, recruitment frameworks, organizational design, and workforce development insights from Edukom HR consultants.</p>
         {% if request.user.is_staff %}
         <div class="mt-3">
-          <a href="http://127.0.0.1:8009/dashboard/" target="_blank" class="btn btn-hero-read">
+          <a href="{{ learning_url }}dashboard/" target="_blank" class="btn btn-hero-read">
             <i class="bi bi-speedometer2 me-1"></i> Admin Dashboard (Create & Edit Posts)
           </a>
         </div>
