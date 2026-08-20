@@ -22,10 +22,13 @@
 
         <div class="d-flex flex-wrap gap-3">
           <a href="{% url 'home' %}" class="btn btn-gold-pill btn-lg">
-            <i class="bi bi-briefcase-fill me-2"></i> Edukom HR Solutions
+            <i class="bi bi-briefcase-fill me-2"></i> Edukom HR
           </a>
           <a href="{% url 'learning_redirect' %}" target="_blank" rel="noopener" class="btn btn-brand-pill btn-lg">
-            <i class="bi bi-mortarboard-fill me-2"></i> Edukom Learning Portal
+            <i class="bi bi-mortarboard-fill me-2"></i> Edukom Learning
+          </a>
+          <a href="{% url 'home' %}#contact" class="btn btn-outline-light rounded-pill btn-lg font-display fw-bold">
+            <i class="bi bi-envelope-fill me-2"></i> Contact Us
           </a>
         </div>
       </div>
@@ -64,13 +67,13 @@
 
     <div class="row g-4 justify-content-center">
       <!-- HR Platform Card -->
-      <div class="col-md-6 col-lg-5" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
         <div class="hub-card h-100 d-flex flex-column justify-content-between">
           <div>
             <span class="hub-badge badge-hr">
               <i class="bi bi-building me-1"></i> Corporate & Enterprise
             </span>
-            <h3 class="fw-bold mb-3 font-display" style="color: var(--primary-color);">Edukom HR Solutions</h3>
+            <h3 class="fw-bold mb-3 font-display" style="color: var(--primary-color);">Edukom HR</h3>
             <ul class="list-unstyled d-flex flex-column gap-2 mb-4 text-secondary small">
               <li><i class="bi bi-check-circle-fill text-accent me-2"></i> Talent Acquisition & Headhunting</li>
               <li><i class="bi bi-check-circle-fill text-accent me-2"></i> Executive Training & Workshops</li>
@@ -87,23 +90,46 @@
       </div>
 
       <!-- Learning Platform Card -->
-      <div class="col-md-6 col-lg-5" data-aos="fade-up" data-aos-delay="200">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
         <div class="hub-card h-100 d-flex flex-column justify-content-between">
           <div>
             <span class="hub-badge badge-learning">
               <i class="bi bi-journal-bookmark-fill me-1"></i> Education & Skills
             </span>
-            <h3 class="fw-bold mb-3 font-display" style="color: var(--blue-accent);">Edukom Learning Platform</h3>
+            <h3 class="fw-bold mb-3 font-display" style="color: var(--blue-accent);">Edukom Learning</h3>
             <ul class="list-unstyled d-flex flex-column gap-2 mb-4 text-secondary small">
               <li><i class="bi bi-check-circle-fill text-info me-2"></i> Student Portal & Course Catalog</li>
               <li><i class="bi bi-check-circle-fill text-info me-2"></i> Expert Tutor Network</li>
               <li><i class="bi bi-check-circle-fill text-info me-2"></i> Interactive Online Classes</li>
-              <li><i class="bi bi-check-circle-fill text-info me-2"></i> Certification Programs</li>
+              <li><i class="bi bi-check-circle-fill text-info me-2"></i> Professional Certification</li>
             </ul>
           </div>
           <div>
             <a href="{% url 'learning_redirect' %}" target="_blank" rel="noopener" class="btn btn-brand-pill w-100 py-3">
-              Open Learning Platform <i class="bi bi-box-arrow-up-right ms-2"></i>
+              Open Edukom Learning <i class="bi bi-box-arrow-up-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Us Card -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="hub-card h-100 d-flex flex-column justify-content-between">
+          <div>
+            <span class="hub-badge" style="background: rgba(255, 200, 87, 0.2); color: #B47B00;">
+              <i class="bi bi-chat-heart-fill me-1"></i> Direct Support
+            </span>
+            <h3 class="fw-bold mb-3 font-display" style="color: var(--text-color);">Contact Us</h3>
+            <ul class="list-unstyled d-flex flex-column gap-2 mb-4 text-secondary small">
+              <li><i class="bi bi-check-circle-fill text-warning me-2"></i> Executive HR Consultations</li>
+              <li><i class="bi bi-check-circle-fill text-warning me-2"></i> Instant WhatsApp Assistance</li>
+              <li><i class="bi bi-check-circle-fill text-warning me-2"></i> Physical Office: Lugbe, Abuja</li>
+              <li><i class="bi bi-check-circle-fill text-warning me-2"></i> Custom Project Inquiries</li>
+            </ul>
+          </div>
+          <div>
+            <a href="{% url 'home' %}#contact" class="btn btn-gold-pill w-100 py-3">
+              Reach Out To Us <i class="bi bi-envelope-fill ms-2"></i>
             </a>
           </div>
         </div>
